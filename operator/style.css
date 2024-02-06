@@ -1,0 +1,45 @@
+*{
+    font-family: "monserrat";
+}
+
+body {
+    background-color: lightcyan;
+}
+
+
+body {
+    background-color: #e8e8e8;
+  }
+  
+  .kartu {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.03);
+    transition: all .3s;
+    background-color: #5918;
+    border: solid 8px #e8e8e8;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+  } 
+.kartu:hover {
+    background-color: palevioletred;
+    border: s  olid 8px plum;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .foto {
+        padding: 20px;
+   margin-left: 30px;
+   margin-top: 10px;
+  }
+  tbody {
+font-size: 20px;
+font-weight: 300;
+color:white;
+}
+.biodata {
+margin-top: 30px;
+}
