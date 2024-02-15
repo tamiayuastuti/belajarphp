@@ -27,11 +27,33 @@
   </div>
       </center>
 
-<?php
-$t = 14;
-if ($t < 20) {
-  echo "Have a good day!";
+      <?php
+
+$nilai = 99; // untuk mengubah nilai //
+
+if ($nilai > 90) {
+    $grade = "A+";
+} elseif($nilai > 80){
+    $grade = "A";
+} elseif($nilai > 70){
+    $grade = "B+";
+} elseif($nilai > 60){
+    $grade = "B";
+} elseif($nilai > 50){
+    $grade = "C+";
+} elseif($nilai > 40){
+    $grade = "C";
+} elseif($nilai > 30){
+    $grade = "D";
+} elseif($nilai > 20){
+    $grade = "E";
+} else {
+    $grade = "F";
 }
+
+echo "Nilai anda: $nilai<br>";
+echo "Grade: $grade";
+
 ?>
  
 </body>

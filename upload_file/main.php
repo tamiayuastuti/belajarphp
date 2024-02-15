@@ -26,13 +26,15 @@
         <img src="timii.jpg" alt="timii.jpg" height="200" width="200">
   </div>
       </center>
-<!--string bisa di deklarasikan dengan menggunakan tanda kutip tunggal ('') atau tanda kutip ganda ("") -->
-  <?php
-$x = "John";
-echo "Hello $x";
-?>
+      <!-- 1. Memeriksa apakah file telah terunggah dengan benar menggunakan fungsi $_FILES["fileToUpload"]["error"].
+           2. Memeriksa dan membatasi tipe file yang diperbolehkan dengan memeriksa ekstensi file menggunakan fungsi pathinfo() atau mime_content_type().
+           3. Menyimpan file yang diunggah ke lokasi yang diinginkan menggunakan fungsi move_uploaded_file(). -->
 
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
 
 </body>
-</html>
-    
+</html>      

@@ -33,7 +33,7 @@
       </center>
 
 <?php
-// mendefinisikan variabel dan mengatur ke nilai kosong
+// untuk mendefinisikan variabel dan mengatur ke nilai kosong //
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $name = $email = $gender = $comment = $website = "";
 
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nameErr = "Name is required";
   } else {
     $name = test_input($_POST["name"]);
-    // periksa apakah nama hanya terdiri dari huruf dan spasi
+    // untuk mengecek apakah nama hanya terdiri dari huruf dan spasi //
     if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
       $nameErr = "Only letters and white space allowed";
     }
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailErr = "Email is required";
   } else {
     $email = test_input($_POST["email"]);
-    // periksa apakah alamat email sudah terbentuk dengan baik
+    // untuk mengecek apakah alamat email sudah terbentuk dengan baik //
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "Invalid email format";
     }
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $website = "";
   } else {
     $website = test_input($_POST["website"]);
-    // periksa apakah sintaks alamat URL valid (ekspresi reguler ini juga mengizinkan tanda hubung pada URL)
+    // untuk mengecek apakah sintaks alamat URL valid (ekspresi reguler ini juga mengizinkan tanda hubung pada URL) //
     if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
       $websiteErr = "Invalid URL";
     }

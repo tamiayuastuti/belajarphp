@@ -26,7 +26,7 @@
         <img src="timii.jpg" alt="timii.jpg" height="300" width="300">
   </div>
       </center>
-
+         <!--variable di dalam php harus di awali tanda dollar ($)-->
       <pre>
       <?php
     $txt = " LOVE  ";

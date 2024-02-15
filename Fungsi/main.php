@@ -2,7 +2,8 @@
 <html>
 <body>
 <link rel="stylesheet" href="style.css">
-<center>      
+<center>
+ <!-- BIODATA  -->
 <div class="biodata">
         <table>
             <tr>
@@ -41,11 +42,11 @@ myMessage();
       <pre> <!--untuk mengatur jarak-->
       <?php
 function familyName($fname) {
-  echo "$fname Refsnes<br>";
+  echo "$fname <br>";   // funsi br untuk mengatur posisi//
 }
   familyName("jisoo");
   familyName("jeahyun");
-  familyName("Kam jisoo");
+  familyName("Kim jisoo");
   familyName("hansoe");
 ?>
 </pre>

@@ -26,19 +26,17 @@
         <img src="timii.jpg" alt="timii.jpg" height="300" width="300">
   </div>
       </center>
-      
-      <h1>Array</h1>
+<!-- array adalah sekumpulan elemen yang mempunyai tipe data yang melalui indeks -->
+      <?php
+// membuat array //
+$barang = ["Buku Tulis", "Penghapus", "Spidol"];
 
-      <pre>
-      <?php  
-    $cars = array("Volvo", "BMW", "Toyota");
-    $cars[1] = "Ford";
-    var_dump($cars);
-      
-?>  
-      </pre>
-   
+// menampilkan isi array //
+  echo $barang[0]."<br>";
+  echo $barang[1]."<br>";
+  echo $barang[2]."<br>";
+  
+  
 
-</pre>
-</body>
-</html>
+
+
